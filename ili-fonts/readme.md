@@ -21,6 +21,8 @@ __*-* Under construction *-*__
 
 Fonts are designed to run on micropython pyboard but you can test and evaluate then on your computer by using Python 3.
 
+You can use the file ```ft-test.py``` which perform the routine as described here under.
+
 Here a sample script that shows you how to do it:
 
 ```
