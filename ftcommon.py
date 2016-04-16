@@ -125,6 +125,11 @@ class FreeTypeLoader(object):
 
     # list of the characters having a descender
     descender_ordinals = [ ord('p'), ord('q'), ord('g'), ord('j'), ord('y'), ord('z') ]
+    # list of special character alignment
+    #    T : on the top (eg: ',",^,` )
+    #    M : centered between the baseline and top (eg: =, ~)
+    #    B : on the bottom (eg: comma )
+    special_align_ordinals = { 34 :'T', 39:'T', 42:'M', 43:'M', 44:'B', 45:'M', 59:'B', 60:'M', 61:'M', 62:'M', 94:'T', 96:'T', 126:'M' }
     
     def __init__( self, font_file, font_size ):
         self.font_file = font_file
@@ -132,6 +137,7 @@ class FreeTypeLoader(object):
         self.face = Face( font_file )
         self.face.set_pixel_sizes( 0, font_size )
         self.characters = {} # a dict of all the chars, key is the character's ordinal
+        self.glyphs     = {} # a dict glyph slots for all the characters
         
         self.init_characters()
         
@@ -142,6 +148,7 @@ class FreeTypeLoader(object):
         for i in range( 0, 255+1 ):
             self.face.load_char( chr(i), FT_LOAD_RENDER | FT_LOAD_TARGET_MONO )
             glyphslot = self.face.glyph
+            self.glyphs[i] = glyphslot # keep reference to the glyphslot
             self.characters[ i ] = GlyphDecoder.from_glyphslot( glyphslot ).bitmap
     
     def char_has_descender( self, ordinal ):
@@ -164,7 +171,25 @@ class FreeTypeLoader(object):
                 self.descender_ordinals.append( int(value[1:]) )
             else:
                 self.descender_ordinals.append( value[0] )
-                         
+     
+    def set_special_align( self, comma_str ):
+        """ Change the default special alignment dictionnaly with with thoses contained within the comma_separated str.
+
+            Example: 
+                set_special_align('')
+                set_special_align('p:T,q:M,#106:B')  char:Align with align Top, Middle, Bottom 
+                set_special_align('#35:B') to define the '#' character. """
+        self.special_align_ordinals = {}
+        if len(comma_str)==0:
+            return
+
+        for key_value in comma_str.split(','):
+            key,value = key_value.split(':')
+            if key[0]=='#':
+                self.special_align_ordinals[ int(key[1:]) ] = value
+            else:
+                self.special_align_ordinals[ ord(key[0]) ] = value
+                     
     @property
     def max_width( self ):
         if self.face==None:
@@ -208,6 +233,7 @@ class FreeTypeLoader(object):
         print( 'Ordinal: %i' % ordinal )
         print( 'Char has descender: %s' % self.char_has_descender( ordinal ) )
         print( 'width, height = %i, %i' % (self.characters[ordinal].width, self.characters[ordinal].height) )
+        # print( 'bitmap_top from base = %i' % self.glyphs[ordinal].bitmap_top )
 
         if self.char_has_descender( ordinal ):
             print( 'width, height = %i, %i (with %i px descender already included)' % (self.characters[ordinal].width, self.characters[ordinal].height, self.descender_size ) )
@@ -324,13 +350,32 @@ class FreeTypeExporter( FreeTypeLoader ):
             # Debug: print( '---------------------------' )
             for ih in range( bmp.height ):
                _ih = bmp.height-1-ih # Must start by the "bottom" of the character
+               
+               # Align on the BottomLine
                _height_extra_shift = self.max_height-bmp.height # The character may have 10 pixels height on a 19 point height font --> shift properly to the left!
                
+               # Align on the BaseLine (if it applies) 
                # check if we do need to insert a descender space (in pixel) under the character 
                if ( len(self.descender_ordinals)>0 ) and not( self.char_has_descender( charCode ) ):
                    # move up the normal character baseline 
                    _height_extra_shift = _height_extra_shift - self.ajusted_descender_size( charCode ) 
+               
+               # SPECIAL ALIGNMENT
+               # check for special alignment instruction (~,comma,", etc)
+               _align = self.special_align_ordinals.get( charCode, None )
+               if _align == 'T': 
+                   # special alignment ON TOP -> reset shifting
+                   _height_extra_shift = 0 
+               elif _align == 'M':
+                   # Special alignment IN MIDLLE of baseline and top
+                   _height_extra_shift = _height_extra_shift - ( self.max_height-bmp.height-self.ajusted_descender_size( charCode ))//2
+               elif _align == 'B':
+                   # Specoam alignment TO BOTTOM (so re-reset the _height_extra_shift on the BottomLine) 
+                   _height_extra_shift = self.max_height-bmp.height 
 
+               # TODO: replacing the descender feature by glyph.bitmap_top does not work properly
+               #       for every characters
+               # _height_extra_shift = self.max_height - self.glyphs[ charCode ].bitmap_top
 
                # print( 'coding bit %i, extra shift of %i FOR VALUE %s' % (_ih, _height_extra_shift, bmp.pixel_at( iw, _ih )) )
                if bmp.pixel_at( iw, _ih ): 
