@@ -5,7 +5,7 @@ help = help = """FreeType View Encoded - get a FreeType font file and display it
 This script is quite useful for advanced debugging. 
  
 Usage:
-  ft-view.py <ttf_file> <ttf_size> --char=<char>
+  ft-view.py <ttf_file> <ttf_size> --char=<char> [--descenders=<comma-separated-list>]
  
 Options:
   -h --help          This helps screen
@@ -28,7 +28,11 @@ if __name__ == '__main__':
     
     print( "Load font %s, set size to %i" % (arguments['<ttf_file>'], int(arguments['<ttf_size>'])) )             
     font_exporter = FreeTypeExporter( font_file=arguments['<ttf_file>'], font_size=int(arguments['<ttf_size>']) )
+
     print( "max size (width,height): %i,%i" %(font_exporter.max_width, font_exporter.max_height ) )
+    print( 'descender size = %i' % font_exporter.descender_size )
+    if arguments['--descenders'] != None: # redefine the default descenders
+       font_exporter.set_descenders( arguments['--descenders'] ) 
 
     for ordinal in font_exporter.characters.keys():
         if (char_filter != None) and (ord(char_filter) != ordinal ):

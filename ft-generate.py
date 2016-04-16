@@ -4,7 +4,7 @@
 help = """FreeType Generator - get a FreeType font file and generates a python font file for the Pyboard's ILI9341 driver 
  
 Usage:
-  ft-generate.py <ttf_file> <ttf_size> <out_python_file> <object_name>
+  ft-generate.py <ttf_file> <ttf_size> <out_python_file> <object_name> [--descenders=<comma-separated-list>]
  
 Options:
   -h --help          This helps screen
@@ -29,6 +29,9 @@ if __name__ == '__main__':
     font_loader = FreeTypeExporter( font_file=arguments['<ttf_file>'], font_size=int(arguments['<ttf_size>']) )
 
     print( "max size (width,height): %i,%i" %(font_loader.max_width, font_loader.max_height ) )
+
+    if arguments['--descenders'] != None: # redefine the default descenders
+       font_loader.set_descenders( arguments['--descenders'] ) 
     
     # Create the Python file for the ILI9341 PyBoard driver
     # Eg: export_filename='heyd_23.py', objectName='Heydings_23'

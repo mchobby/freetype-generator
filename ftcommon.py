@@ -122,6 +122,9 @@ class FreeTypeLoader(object):
     """ Load a freetype font and render IN-MEMORY all the characters from char(0) to char(255) """
     face = None
     font_file = None 
+
+    # list of the characters having a descender
+    descender_ordinals = [ ord('p'), ord('q'), ord('g'), ord('j'), ord('y'), ord('z') ]
     
     def __init__( self, font_file, font_size ):
         self.font_file = font_file
@@ -140,7 +143,28 @@ class FreeTypeLoader(object):
             self.face.load_char( chr(i), FT_LOAD_RENDER | FT_LOAD_TARGET_MONO )
             glyphslot = self.face.glyph
             self.characters[ i ] = GlyphDecoder.from_glyphslot( glyphslot ).bitmap
-            
+    
+    def char_has_descender( self, ordinal ):
+        """ Check if the character is one of the characters which have a descender """
+        return (ordinal in self.descender_ordinals)
+
+    def set_descenders( self, comma_str ):
+        """ Change the default descender list with with thoses contained within the comma_separated str.
+
+            Example: 
+                set_descenders('')
+                set_descenders('p,q,y,#106') 
+                set_descenders('#35') to define the '#' character. """
+        self.descender_ordinals = []
+        if len(comma_str)==0:
+            return
+
+        for value in comma_str.split(','):
+            if value[0]=='#':
+                self.descender_ordinals.append( int(value[1:]) )
+            else:
+                self.descender_ordinals.append( value[0] )
+                         
     @property
     def max_width( self ):
         if self.face==None:
@@ -160,6 +184,21 @@ class FreeTypeLoader(object):
             if bitmap.height > iMax:
                 iMax = bitmap.height
         return iMax
+
+    @property
+    def descender_size( self ):
+        """ Size (in pixels) of the descender which applies to pqyjg (maybe f).
+            This size is calculated (rounded) based on FreeType font property """
+        if self.face.descender == 0:
+            return 0
+
+        _desc_pixels = self.max_height * ( abs(self.face.descender) / self.face.height )
+        return round( _desc_pixels ) # over 2.4 -> 2 ; 2.5 -> 2 ; 2.51 -> 3 
+
+    def ajusted_descender_size( self, ordinal ):
+       """ Return the descender size BUT ensure that descender size (rounded calcul) + bitmap char's height STAYS UNDER the bitmap max-size. If not, the descender_size is adjuster at a lower value """
+       return self.descender_size if self.descender_size + self.characters[ordinal].height < self.max_height else self.max_height - self.characters[ordinal].height 
+            
         
     def print_character( self, ordinal ):
         """ Just print the bits representation of a character (with space and star for 0 and 1) """
@@ -167,7 +206,16 @@ class FreeTypeLoader(object):
         if not( ordinal in self.characters ):
             print( '%s (%i) is not present in characters' % (chr(ordinal), ordinal) )
         print( 'Ordinal: %i' % ordinal )
+        print( 'Char has descender: %s' % self.char_has_descender( ordinal ) )
         print( 'width, height = %i, %i' % (self.characters[ordinal].width, self.characters[ordinal].height) )
+
+        if self.char_has_descender( ordinal ):
+            print( 'width, height = %i, %i (with %i px descender already included)' % (self.characters[ordinal].width, self.characters[ordinal].height, self.descender_size ) )
+        else:
+            # Sometime, Char-Size + Descender Size GOES OVER the font size --> reduce the descender 
+            _descender = self.ajusted_descender_size( ordinal )
+            print( 'width, height = %i, %i (with %i px ajusted_descender added)' % (self.characters[ordinal].width, self.characters[ordinal].height + _descender, _descender ) )
+
         print( self.characters[ordinal] )
 
        
@@ -277,6 +325,13 @@ class FreeTypeExporter( FreeTypeLoader ):
             for ih in range( bmp.height ):
                _ih = bmp.height-1-ih # Must start by the "bottom" of the character
                _height_extra_shift = self.max_height-bmp.height # The character may have 10 pixels height on a 19 point height font --> shift properly to the left!
+               
+               # check if we do need to insert a descender space (in pixel) under the character 
+               if ( len(self.descender_ordinals)>0 ) and not( self.char_has_descender( charCode ) ):
+                   # move up the normal character baseline 
+                   _height_extra_shift = _height_extra_shift - self.ajusted_descender_size( charCode ) 
+
+
                # print( 'coding bit %i, extra shift of %i FOR VALUE %s' % (_ih, _height_extra_shift, bmp.pixel_at( iw, _ih )) )
                if bmp.pixel_at( iw, _ih ): 
                    value = value + (1 << (_ih+_height_extra_shift))
