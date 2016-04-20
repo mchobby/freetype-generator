@@ -124,12 +124,12 @@ class FreeTypeLoader(object):
     font_file = None 
 
     # list of the characters having a descender
-    descender_ordinals = [ ord('p'), ord('q'), ord('g'), ord('j'), ord('y'), ord('z') ]
+    descender_ordinals = [ ord('p'), ord('q'), ord('g'), ord('j'), ord('y')] # ord('z') is commonly not an descender
     # list of special character alignment
     #    T : on the top (eg: ',",^,` )
     #    M : centered between the baseline and top (eg: =, ~)
     #    B : on the bottom (eg: comma )
-    special_align_ordinals = { 34 :'T', 39:'T', 42:'M', 43:'M', 44:'B', 45:'M', 59:'B', 60:'M', 61:'M', 62:'M', 94:'T', 96:'T', 126:'M' }
+    special_align_ordinals = { 34 :'T', 39:'T', 42:'M', 43:'M', 44:'B', 45:'M', 59:'B', 60:'M', 61:'M', 62:'M', 94:'T', 96:'T', 126:'M', 176:'T' }
     
     def __init__( self, font_file, font_size ):
         self.font_file = font_file
@@ -264,6 +264,11 @@ class FreeTypeExporter( FreeTypeLoader ):
         _file.write( "'width' : %s, \n" % str(hex(self.max_width)) )
         _file.write( "'height' : %s, \n" % str(hex(self.max_height)) ) # Warning, this value may be higher that font size (due to some chars)
 
+        # Keep the height+1 right bits when encoding for the font gen1 for the Pyboard.
+        _mask = 0
+        for i in range( self.max_height+1 ):
+            _mask = _mask + (1<<i)
+        
         # keys (int) : ordinal value of character (ascii code) 
         keys = list(self.characters.keys())
         for key in keys:
@@ -283,7 +288,7 @@ class FreeTypeExporter( FreeTypeLoader ):
             
             _file.write( "%i:(" % key ) # Key entry in the dictionnary
             for iValue in range(len(values)):
-               _file.write( " %s" % str(hex(values[iValue]) ) )
+               _file.write( " %s" % str(hex(values[iValue] & _mask) ) )
                if ( iValue < (len(values)-1) ) or (iValue==0): # force minimal tuple representation with coma! eg: (12345,)
                   _file.write( "," )
             _file.write( ")")
