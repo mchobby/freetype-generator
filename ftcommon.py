@@ -129,7 +129,9 @@ class FreeTypeLoader(object):
     #    T : on the top (eg: ',",^,` )
     #    M : centered between the baseline and top (eg: =, ~)
     #    B : on the bottom (eg: comma )
-    special_align_ordinals = { 34 :'T', 39:'T', 42:'M', 43:'M', 44:'B', 45:'M', 59:'B', 60:'M', 61:'M', 62:'M', 94:'T', 96:'T', 126:'M', 176:'T' }
+    special_align_ordinals = { 34 :'T', 39:'T', 42:'M', 43:'M', 44:'B', 45:'M', 59:'B', 60:'M', 61:'M', 62:'M', 94:'T', 96:'T', 126:'M', 176:'T', 178:'T', 179:'T', 185:'T' }
+    # List of the characters (ordinal value) to generate 
+    char_ordinals = [] 
     
     def __init__( self, font_file, font_size ):
         self.font_file = font_file
@@ -139,7 +141,12 @@ class FreeTypeLoader(object):
         self.characters = {} # a dict of all the chars, key is the character's ordinal
         self.glyphs     = {} # a dict glyph slots for all the characters
         
+        # Load the characters representation
         self.init_characters()
+
+        # Set a list of character (eg: for further export tasks)
+        self.set_char_ordinals( '#32-#255' ) 
+
         
     def init_characters( self ):
         """ generate all the CharBitmap object (for each characters) and store it into 
@@ -154,6 +161,41 @@ class FreeTypeLoader(object):
     def char_has_descender( self, ordinal ):
         """ Check if the character is one of the characters which have a descender """
         return (ordinal in self.descender_ordinals)
+
+    def str_to_ord( self, s ):
+        """ Transform a string representing a character to its ordinal value.
+            a -> return 97 ( which is ord('a') )  
+            #90 -> return 90 (which is ord('z') )"""
+        if len(s) == 0:
+            raise EValueError( 'empty string!' )
+        if s[0] == '#':
+            if len(s)<1:
+                raise EValueError( '# must be followed by a number' )
+        elif len(s)>1:
+            raise EValueError( 'Allow ONLY one alphabetical character' )
+                
+        if s[0] == '#':
+            return int( s[1:] )
+        else:
+            return ord( s )
+        
+            
+    def set_char_ordinals( self, comma_str ):
+        """ Initialise a list of characters (for further export purpose). 
+            Can use the following syntax:
+             
+            #32-#57 : from ordinal 32 to ordinal 57 (included)
+            a-z,A,B,#123 : from a to z + A + B + ordinal 123 """
+        self.char_ordinals.clear()
+        items = comma_str.split(',')
+        for item in items:
+            # Has Range 
+            if '-' in item:
+                for ordinal in range( self.str_to_ord( item.split('-')[0] ), self.str_to_ord( item.split('-')[1] )+1 ):
+                    self.char_ordinals.append( ordinal )
+            else:
+                self.char_ordinals.append( self.str_to_ord( item ) )
+ 
 
     def set_descenders( self, comma_str ):
         """ Change the default descender list with with thoses contained within the comma_separated str.
@@ -270,13 +312,17 @@ class FreeTypeExporter( FreeTypeLoader ):
             _mask = _mask + (1<<i)
         
         # keys (int) : ordinal value of character (ascii code) 
-        keys = list(self.characters.keys())
-        for key in keys:
+        #keys = list(self.characters.keys())
+        #for key in keys:
+
+        # keys (int) : ordinal value of character (ascii code)
+        # char_ordinals contains the characters to exports. 
+        for key in self.char_ordinals:  
             # Do not include:
             #   - the first 31 chars
             #   - the empty chars (not having a single pixel) EXPCEPT the space charaters
             #   - the fully black chars (having all the pixels lighted on total width and height
-            if( (self.characters[key].is_blank or self.characters[key].is_black(self.max_width, self.max_height) or (key <= 31) ) and not(key==32) ):
+            if (self.characters[key].is_blank or self.characters[key].is_black(self.max_width, self.max_height) and not(key==32) ):
                 continue
             # Encode the character bitmap (the bits) as value
             try:
@@ -292,7 +338,7 @@ class FreeTypeExporter( FreeTypeLoader ):
                if ( iValue < (len(values)-1) ) or (iValue==0): # force minimal tuple representation with coma! eg: (12345,)
                   _file.write( "," )
             _file.write( ")")
-            if key != keys[-1]: # Append a comma between each character definition
+            if key != self.char_ordinals[-1]: # Append a comma between each character definition
                 _file.write( ',' )
             _file.write( '\n' )
         _file.write( '}\n') # Close the dictionnary

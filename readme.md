@@ -16,6 +16,8 @@ Notices:
 ** Fonts from 9 to 15 pixels height are encoded with 16 bits per column.    
 ** Fonts from 16 to 23 pixels hight are encoded with 24 bits per column.
 
+When generating the values, the numeric values are masked with 0b1111111111 (mask having font_height_in_pixels+1 bits length). 
+
 # Files
 
 * __ttf-fonts/__ - This folder contains source font that will be transformed 

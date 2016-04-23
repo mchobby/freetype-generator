@@ -4,7 +4,7 @@
 help = """FreeType Generator - get a FreeType font file and generates a python font file for the Pyboard's ILI9341 driver 
  
 Usage:
-  ft-generate.py <ttf_file> <ttf_size> <out_python_file> <object_name> [--descenders=<comma-separated-list>] [--special-align=<comma-separated-list>]
+  ft-generate.py <ttf_file> <ttf_size> <out_python_file> <object_name> [--descenders=<comma-separated-list>] [--special-align=<comma-separated-list>]  [--chars=<comma-separated-list>]
  
 Options:
   -h --help          This helps screen
@@ -33,7 +33,9 @@ if __name__ == '__main__':
     if arguments['--descenders'] != None: # redefine the default descenders
        font_loader.set_descenders( arguments['--descenders'] ) 
     if arguments['--special-align' ] != None: # redefine the default special alignments
-       font_loader.set_special_align( arguments['--special-align' ] ) 
+       font_loader.set_special_align( arguments['--special-align' ] )
+    if arguments['--chars'] != None: # redifine the list of characters to export
+       font_loader.set_char_ordinals( arguments['--chars'] ) 
 
 
     print( "max size (width,height): %i,%i" %(font_loader.max_width, font_loader.max_height ) )

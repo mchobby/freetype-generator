@@ -44,7 +44,8 @@ if __name__ == '__main__':
     print( 'descender size = %i' % font_loader.descender_size )
 
 
-    for ordinal in font_loader.characters.keys():
+    #  for ordinal in font_loader.characters.keys():
+    for ordinal in font_loader.char_ordinals:
         if (char_filter != None) and (ord(char_filter) != ordinal ):
             continue
 

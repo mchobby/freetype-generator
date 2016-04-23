@@ -43,7 +43,8 @@ if __name__ == '__main__':
     print( "max size (width,height): %i,%i" %(font_exporter.max_width, font_exporter.max_height ) )
     print( 'descender size = %i' % font_exporter.descender_size ) 
 
-    for ordinal in font_exporter.characters.keys():
+    #for ordinal in font_exporter.characters.keys():
+    for ordinal in font_exporter.char_ordinals:
         if (char_filter != None) and (ord(char_filter) != ordinal ):
             continue
 

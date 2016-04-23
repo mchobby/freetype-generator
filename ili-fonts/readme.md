@@ -8,8 +8,9 @@ Generation 1 of the driver use python file that can be loaded and parsed by the 
  
 A font python file (eg: ```vera_14.py``) follows the following rules:
 * Filename in lowercase, less than 8 caracters len. Using the .py extension.
-* Filname ends with ```_<font_height_in_pixels>```. Allows you to identify the characters size on your TFT.
-* File contains an objet "CamelCase" named also containing the font size in its name (eg: for the ```vera_14.py``` the object name declared in the file is ```Vera_14```) 
+* Filename ends with ```_<font_height_in_pixels>```. Allows you to identify the characters size on your TFT.
+* File contains an objet "CamelCase" named also containing the font size in its name (eg: for the ```vera_14.py``` the object name declared in the file is ```Vera_14```)
+* A file containing a ```_m<font_height_in_pixels>``` indicates a font with __reduced charset__ (to spare memory).
 
 ## ili-fonts - Generation 2
 
@@ -60,4 +61,4 @@ Here a sample script that shows you how to do it:
 
 Notes:
 * for encoding reason, the first bit (most significant one) must always be be set to 1. 
-* All non used bits (on the left) are set to 1.
+* All non used bits (on the left) are set to 1 THEN the final calculated value (numeric) is masked with a 0b11111111 mask (having <font_height_in_pixels>+1 bits). 
