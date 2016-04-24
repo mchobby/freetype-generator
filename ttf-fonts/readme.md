@@ -10,3 +10,5 @@ Fonts are stored to facilitate the font creation.
 * (invalid) wingding - https://github.com/caarlos0/msfonts/tree/master/fonts
 * heydings-common-icons - https://www.fontsquirrel.com/fonts/list/classification/dingbat
 * entypo - https://www.fontsquirrel.com/fonts/list/classification/dingbat
+* PizzaDude Bullets - http://www.dafont.com/fr/pizzadude-bullets.font
+* Arrows - http://www.dafont.com/fr/arrows.font

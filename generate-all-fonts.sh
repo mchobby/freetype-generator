@@ -13,6 +13,9 @@ python3 ft-generate.py ttf-fonts/heydings_icons.ttf 23 ili-fonts/heyd_23.py Heyd
 python3 ft-generate.py ttf-fonts/Entypo.otf 23 ili-fonts/etypo_13.py Entypo_13 --descenders= --special-align= --chars=#33-#126,#174,#196-#197,#199,#201,#209,#214,#220,#224-#229,#231-#239,#241-#244,#246
 python3 ft-generate.py ttf-fonts/Entypo.otf 42 ili-fonts/etypo_23.py Entypo_23 --descenders= --special-align= --chars=#33-#126,#174,#196-#197,#199,#201,#209,#214,#220,#224-#229,#231-#239,#241-#244,#246
 
+python3 ft-generate.py ttf-fonts/Arrows.ttf 24 ili-fonts/arrows_15.py Arrows_15 --descenders= --special-align=#65:M,#66:M,#73:M,#74:M,#81:M,#82:M,#83:M,#84:M,#85:M,#86:M,#87:M,#88:M,#97:M,#98:M --chars=#65-#90,#97-#122
+python3 ft-generate.py ttf-fonts/Arrows.ttf 36 ili-fonts/arrows_23.py Arrows_23 --descenders= --special-align=#65:M,#66:M,#73:M,#74:M,#81:M,#82:M,#83:M,#84:M,#85:M,#86:M,#87:M,#88:M,#97:M,#98:M --chars=#65-#90,#97-#122
+
 python3 ft-generate.py ttf-fonts/Vera.ttf 10 ili-fonts/vera_10.py Vera_10 --chars=$FULL_CHARSET
 python3 ft-generate.py ttf-fonts/Vera.ttf 14 ili-fonts/vera_15.py Vera_15 --chars=$FULL_CHARSET
 python3 ft-generate.py ttf-fonts/Vera.ttf 23 ili-fonts/vera_23.py Vera_23 --chars=$FULL_CHARSET
