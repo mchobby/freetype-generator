@@ -4,6 +4,8 @@ Project contains several items:
 1. __FreeType Generator__ : a Python 3 FreeType Font generator creating font files that are compatible with MicroPython ressources.
 2. __FontDrawer__ : a MicroPython library loading font file and draw font-based text onto graphical display (via FrameBuffer manipulation).
 
+![FreeType Generator Logo project](docs/_static/freetype-generator-logo.jpg)
+
 ## FreeType Generator
 The generator project will load .ttf files and generates font files under (.py and .bin) format.
 
