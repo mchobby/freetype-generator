@@ -1,0 +1,3609 @@
+Load font ttf-fonts/Vera.ttf, set size to 14
+max size (width,height): 13,15
+descender size = 3
+---   ----------------
+Ordinal: 32
+Char has descender: False
+width, height = 0, 0
+width, height = 0, 3 (with 3 px ajusted_descender added)
+
+--- ! ----------------
+Ordinal: 33
+Char has descender: False
+width, height = 1, 10
+width, height = 1, 13 (with 3 px ajusted_descender added)
+*
+*
+*
+*
+*
+*
+ 
+ 
+*
+*
+
+--- " ----------------
+Ordinal: 34
+Char has descender: False
+width, height = 3, 4
+width, height = 3, 7 (with 3 px ajusted_descender added)
+* *
+* *
+* *
+* *
+
+--- # ----------------
+Ordinal: 35
+Char has descender: False
+width, height = 10, 10
+width, height = 10, 13 (with 3 px ajusted_descender added)
+    *  *  
+    *  *  
+    *  *  
+ *********
+   *  *   
+   *  *   
+********* 
+  *  **   
+  *  *    
+  *  *    
+
+--- $ ----------------
+Ordinal: 36
+Char has descender: False
+width, height = 7, 13
+width, height = 7, 15 (with 2 px ajusted_descender added)
+   *   
+   *   
+ ***** 
+*  *  *
+*  *   
+** *   
+ ***** 
+   * **
+   *  *
+*  *  *
+ ***** 
+   *   
+   *   
+
+--- % ----------------
+Ordinal: 37
+Char has descender: False
+width, height = 12, 10
+width, height = 12, 13 (with 3 px ajusted_descender added)
+ ***    *   
+*   *   *   
+*   *  *    
+*   * **    
+*   * * *** 
+ *** * *   *
+    ** *   *
+    *  *   *
+   *   *   *
+   *    *** 
+
+--- & ----------------
+Ordinal: 38
+Char has descender: False
+width, height = 10, 10
+width, height = 10, 13 (with 3 px ajusted_descender added)
+  ***     
+ *   *    
+ *        
+  *       
+ * *      
+*   *    *
+*    *   *
+*     * * 
+ *    **  
+  ****  **
+
+--- ' ----------------
+Ordinal: 39
+Char has descender: False
+width, height = 1, 4
+width, height = 1, 7 (with 3 px ajusted_descender added)
+*
+*
+*
+*
+
+--- ( ----------------
+Ordinal: 40
+Char has descender: False
+width, height = 3, 12
+width, height = 3, 15 (with 3 px ajusted_descender added)
+ **
+ * 
+ * 
+*  
+*  
+*  
+*  
+*  
+*  
+ * 
+ * 
+  *
+
+--- ) ----------------
+Ordinal: 41
+Char has descender: False
+width, height = 3, 12
+width, height = 3, 15 (with 3 px ajusted_descender added)
+*  
+ * 
+ * 
+  *
+  *
+  *
+  *
+  *
+  *
+ * 
+ * 
+*  
+
+--- * ----------------
+Ordinal: 42
+Char has descender: False
+width, height = 7, 6
+width, height = 7, 9 (with 3 px ajusted_descender added)
+   *   
+*  *  *
+ ***** 
+  ***  
+** * **
+   *   
+
+--- + ----------------
+Ordinal: 43
+Char has descender: False
+width, height = 9, 9
+width, height = 9, 12 (with 3 px ajusted_descender added)
+    *    
+    *    
+    *    
+    *    
+*********
+    *    
+    *    
+    *    
+    *    
+
+--- , ----------------
+Ordinal: 44
+Char has descender: False
+width, height = 2, 3
+width, height = 2, 6 (with 3 px ajusted_descender added)
+ *
+ *
+* 
+
+--- - ----------------
+Ordinal: 45
+Char has descender: False
+width, height = 4, 1
+width, height = 4, 4 (with 3 px ajusted_descender added)
+****
+
+--- . ----------------
+Ordinal: 46
+Char has descender: False
+width, height = 1, 2
+width, height = 1, 5 (with 3 px ajusted_descender added)
+*
+*
+
+--- / ----------------
+Ordinal: 47
+Char has descender: False
+width, height = 5, 12
+width, height = 5, 15 (with 3 px ajusted_descender added)
+    *
+   **
+   * 
+   * 
+  ** 
+  *  
+  *  
+ **  
+ *   
+ *   
+**   
+*    
+
+--- 0 ----------------
+Ordinal: 48
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+  ***  
+ *   * 
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+ *   * 
+  ***  
+
+--- 1 ----------------
+Ordinal: 49
+Char has descender: False
+width, height = 5, 10
+width, height = 5, 13 (with 3 px ajusted_descender added)
+ **  
+* *  
+  *  
+  *  
+  *  
+  *  
+  *  
+  *  
+  *  
+*****
+
+--- 2 ----------------
+Ordinal: 50
+Char has descender: False
+width, height = 6, 10
+width, height = 6, 13 (with 3 px ajusted_descender added)
+ **** 
+*   **
+     *
+     *
+    **
+    * 
+   *  
+  *   
+ *    
+******
+
+--- 3 ----------------
+Ordinal: 51
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+ ***** 
+*    **
+      *
+      *
+  **** 
+     **
+      *
+      *
+*    **
+ ****  
+
+--- 4 ----------------
+Ordinal: 52
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+    ** 
+   * * 
+  *  * 
+  *  * 
+ *   * 
+*    * 
+*******
+     * 
+     * 
+     * 
+
+--- 5 ----------------
+Ordinal: 53
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+****** 
+*      
+*      
+*****  
+*    * 
+      *
+      *
+      *
+*    * 
+ ****  
+
+--- 6 ----------------
+Ordinal: 54
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+  **** 
+ **   *
+**     
+*      
+* **** 
+**   **
+*     *
+*     *
+ *   **
+  **** 
+
+--- 7 ----------------
+Ordinal: 55
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+*******
+     * 
+     * 
+    *  
+    *  
+   *   
+   *   
+  *    
+  *    
+ *     
+
+--- 8 ----------------
+Ordinal: 56
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+ ***** 
+**   **
+*     *
+**   **
+  ***  
+**   **
+*     *
+*     *
+**   **
+ ***** 
+
+--- 9 ----------------
+Ordinal: 57
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+ ****  
+**   * 
+*     *
+*     *
+**   **
+ **** *
+      *
+     **
+*   ** 
+ ****  
+
+--- : ----------------
+Ordinal: 58
+Char has descender: False
+width, height = 1, 7
+width, height = 1, 10 (with 3 px ajusted_descender added)
+*
+*
+ 
+ 
+ 
+*
+*
+
+--- ; ----------------
+Ordinal: 59
+Char has descender: False
+width, height = 2, 8
+width, height = 2, 11 (with 3 px ajusted_descender added)
+ *
+ *
+  
+  
+  
+ *
+ *
+* 
+
+--- < ----------------
+Ordinal: 60
+Char has descender: False
+width, height = 9, 8
+width, height = 9, 11 (with 3 px ajusted_descender added)
+        *
+     *** 
+  ***    
+***      
+***      
+  ***    
+     *** 
+        *
+
+--- = ----------------
+Ordinal: 61
+Char has descender: False
+width, height = 9, 4
+width, height = 9, 7 (with 3 px ajusted_descender added)
+*********
+         
+         
+*********
+
+--- > ----------------
+Ordinal: 62
+Char has descender: False
+width, height = 9, 8
+width, height = 9, 11 (with 3 px ajusted_descender added)
+*        
+ ***     
+    ***  
+      ***
+      ***
+    ***  
+ ***     
+*        
+
+--- ? ----------------
+Ordinal: 63
+Char has descender: False
+width, height = 5, 10
+width, height = 5, 13 (with 3 px ajusted_descender added)
+ *** 
+*   *
+    *
+   **
+  ** 
+  *  
+  *  
+     
+  *  
+  *  
+
+--- @ ----------------
+Ordinal: 64
+Char has descender: False
+width, height = 12, 12
+width, height = 12, 15 (with 3 px ajusted_descender added)
+    *****   
+  **     *  
+ *        * 
+ *  *** *  *
+*  **  **  *
+*  *    *  *
+*  *    *  *
+*  **  ** * 
+ *  *** **  
+ *          
+  **     *  
+    *****   
+
+--- A ----------------
+Ordinal: 65
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+    *    
+   * *   
+   * *   
+  *   *  
+  *   *  
+  *   *  
+ ******* 
+ *     * 
+ *     * 
+*       *
+
+--- B ----------------
+Ordinal: 66
+Char has descender: False
+width, height = 8, 10
+width, height = 8, 13 (with 3 px ajusted_descender added)
+******* 
+*     **
+*      *
+*     **
+******* 
+*     **
+*      *
+*      *
+*     **
+******* 
+
+--- C ----------------
+Ordinal: 67
+Char has descender: False
+width, height = 8, 10
+width, height = 8, 13 (with 3 px ajusted_descender added)
+  ***** 
+ **    *
+**      
+*       
+*       
+*       
+*       
+**      
+ **    *
+  ***** 
+
+--- D ----------------
+Ordinal: 68
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+******   
+*     ** 
+*      **
+*       *
+*       *
+*       *
+*       *
+*      **
+*     ** 
+******   
+
+--- E ----------------
+Ordinal: 69
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+*******
+*      
+*      
+*      
+*******
+*      
+*      
+*      
+*      
+*******
+
+--- F ----------------
+Ordinal: 70
+Char has descender: False
+width, height = 6, 10
+width, height = 6, 13 (with 3 px ajusted_descender added)
+******
+*     
+*     
+*     
+******
+*     
+*     
+*     
+*     
+*     
+
+--- G ----------------
+Ordinal: 71
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+   ***** 
+ **     *
+ *       
+*        
+*        
+*     ***
+*       *
+ *      *
+ **     *
+   ***** 
+
+--- H ----------------
+Ordinal: 72
+Char has descender: False
+width, height = 8, 10
+width, height = 8, 13 (with 3 px ajusted_descender added)
+*      *
+*      *
+*      *
+*      *
+********
+*      *
+*      *
+*      *
+*      *
+*      *
+
+--- I ----------------
+Ordinal: 73
+Char has descender: False
+width, height = 1, 10
+width, height = 1, 13 (with 3 px ajusted_descender added)
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+
+--- J ----------------
+Ordinal: 74
+Char has descender: False
+width, height = 3, 13
+width, height = 3, 15 (with 2 px ajusted_descender added)
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+** 
+
+--- K ----------------
+Ordinal: 75
+Char has descender: False
+width, height = 8, 10
+width, height = 8, 13 (with 3 px ajusted_descender added)
+*     * 
+*    *  
+*   *   
+*  *    
+***     
+* *     
+*  *    
+*   *   
+*    *  
+*     * 
+
+--- L ----------------
+Ordinal: 76
+Char has descender: False
+width, height = 6, 10
+width, height = 6, 13 (with 3 px ajusted_descender added)
+*     
+*     
+*     
+*     
+*     
+*     
+*     
+*     
+*     
+******
+
+--- M ----------------
+Ordinal: 77
+Char has descender: False
+width, height = 10, 10
+width, height = 10, 13 (with 3 px ajusted_descender added)
+**      **
+**      **
+* *    * *
+* *    * *
+*  *  *  *
+*  *  *  *
+*   **   *
+*   **   *
+*        *
+*        *
+
+--- N ----------------
+Ordinal: 78
+Char has descender: False
+width, height = 8, 10
+width, height = 8, 13 (with 3 px ajusted_descender added)
+**     *
+**     *
+* *    *
+*  *   *
+*  *   *
+*   *  *
+*   *  *
+*    * *
+*     **
+*     **
+
+--- O ----------------
+Ordinal: 79
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+  *****  
+ **   ** 
+**     **
+*       *
+*       *
+*       *
+*       *
+**     **
+ **   ** 
+  *****  
+
+--- P ----------------
+Ordinal: 80
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+****** 
+*    **
+*     *
+*     *
+*    **
+****** 
+*      
+*      
+*      
+*      
+
+--- Q ----------------
+Ordinal: 81
+Char has descender: False
+width, height = 9, 12
+width, height = 9, 15 (with 3 px ajusted_descender added)
+  *****  
+ **   ** 
+**     **
+*       *
+*       *
+*       *
+*       *
+**     **
+ **   ** 
+  *****  
+      *  
+       * 
+
+--- R ----------------
+Ordinal: 82
+Char has descender: False
+width, height = 8, 10
+width, height = 8, 13 (with 3 px ajusted_descender added)
+******  
+*    ** 
+*     * 
+*     * 
+*    ** 
+******  
+*    ** 
+*     * 
+*     * 
+*      *
+
+--- S ----------------
+Ordinal: 83
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+ ***** 
+**    *
+*      
+*      
+ **    
+   *** 
+      *
+      *
+*    **
+ ***** 
+
+--- T ----------------
+Ordinal: 84
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+*********
+    *    
+    *    
+    *    
+    *    
+    *    
+    *    
+    *    
+    *    
+    *    
+
+--- U ----------------
+Ordinal: 85
+Char has descender: False
+width, height = 8, 10
+width, height = 8, 13 (with 3 px ajusted_descender added)
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+ *    * 
+  ****  
+
+--- V ----------------
+Ordinal: 86
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+*       *
+ *     * 
+ *     * 
+ *     * 
+  *   *  
+  *   *  
+   * *   
+   * *   
+   * *   
+    *    
+
+--- W ----------------
+Ordinal: 87
+Char has descender: False
+width, height = 13, 10
+width, height = 13, 13 (with 3 px ajusted_descender added)
+*     *     *
+*    * *    *
+ *   * *   * 
+ *   * *   * 
+ *   * *   * 
+  * *   * *  
+  * *   * *  
+  * *   * *  
+  * *   * *  
+   *     *   
+
+--- X ----------------
+Ordinal: 88
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+**     **
+ *     * 
+  *   *  
+   * *   
+    *    
+   * *   
+  *   *  
+  *   *  
+ *     * 
+**     **
+
+--- Y ----------------
+Ordinal: 89
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+**     **
+ *     * 
+  *   *  
+  *   *  
+   * *   
+    *    
+    *    
+    *    
+    *    
+    *    
+
+--- Z ----------------
+Ordinal: 90
+Char has descender: False
+width, height = 8, 10
+width, height = 8, 13 (with 3 px ajusted_descender added)
+********
+       *
+      * 
+     *  
+    *   
+   *    
+  *     
+ *      
+*       
+********
+
+--- [ ----------------
+Ordinal: 91
+Char has descender: False
+width, height = 3, 12
+width, height = 3, 15 (with 3 px ajusted_descender added)
+***
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+***
+
+--- \ ----------------
+Ordinal: 92
+Char has descender: False
+width, height = 5, 12
+width, height = 5, 15 (with 3 px ajusted_descender added)
+*    
+**   
+ *   
+ *   
+ **  
+  *  
+  *  
+  ** 
+   * 
+   * 
+   **
+    *
+
+--- ] ----------------
+Ordinal: 93
+Char has descender: False
+width, height = 3, 12
+width, height = 3, 15 (with 3 px ajusted_descender added)
+***
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+***
+
+--- ^ ----------------
+Ordinal: 94
+Char has descender: False
+width, height = 9, 4
+width, height = 9, 7 (with 3 px ajusted_descender added)
+   ***   
+  ** **  
+ **   ** 
+**     **
+
+--- _ ----------------
+Ordinal: 95
+Char has descender: False
+width, height = 7, 1
+width, height = 7, 4 (with 3 px ajusted_descender added)
+*******
+
+--- ` ----------------
+Ordinal: 96
+Char has descender: False
+width, height = 3, 3
+width, height = 3, 6 (with 3 px ajusted_descender added)
+** 
+ * 
+  *
+
+--- a ----------------
+Ordinal: 97
+Char has descender: False
+width, height = 6, 8
+width, height = 6, 11 (with 3 px ajusted_descender added)
+ **** 
+*    *
+     *
+ *****
+*    *
+*    *
+*   **
+ *** *
+
+--- b ----------------
+Ordinal: 98
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+*      
+*      
+*      
+* ***  
+**   * 
+*     *
+*     *
+*     *
+*     *
+**   * 
+* ***  
+
+--- c ----------------
+Ordinal: 99
+Char has descender: False
+width, height = 6, 8
+width, height = 6, 11 (with 3 px ajusted_descender added)
+  *** 
+ *   *
+*     
+*     
+*     
+*     
+ *   *
+  *** 
+
+--- d ----------------
+Ordinal: 100
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+      *
+      *
+      *
+  *** *
+ *   **
+*     *
+*     *
+*     *
+*     *
+ *   **
+  *** *
+
+--- e ----------------
+Ordinal: 101
+Char has descender: False
+width, height = 7, 8
+width, height = 7, 11 (with 3 px ajusted_descender added)
+  **** 
+ *   **
+*     *
+*******
+*      
+*      
+ *    *
+  **** 
+
+--- f ----------------
+Ordinal: 102
+Char has descender: False
+width, height = 4, 11
+width, height = 4, 14 (with 3 px ajusted_descender added)
+  **
+ *  
+ *  
+****
+ *  
+ *  
+ *  
+ *  
+ *  
+ *  
+ *  
+
+--- g ----------------
+Ordinal: 103
+Char has descender: True
+width, height = 7, 11
+width, height = 7, 11 (with 3 px descender already included)
+  *** *
+ *   **
+*     *
+*     *
+*     *
+*     *
+ *   **
+  *** *
+      *
+ *   **
+  **** 
+
+--- h ----------------
+Ordinal: 104
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+*      
+*      
+*      
+* **** 
+**   **
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+
+--- i ----------------
+Ordinal: 105
+Char has descender: False
+width, height = 1, 11
+width, height = 1, 14 (with 3 px ajusted_descender added)
+*
+*
+ 
+*
+*
+*
+*
+*
+*
+*
+*
+
+--- j ----------------
+Ordinal: 106
+Char has descender: True
+width, height = 3, 14
+width, height = 3, 14 (with 3 px descender already included)
+  *
+  *
+   
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+** 
+
+--- k ----------------
+Ordinal: 107
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+*      
+*      
+*      
+*    * 
+*   *  
+*  *   
+***    
+* *    
+*  *   
+*   *  
+*    * 
+
+--- l ----------------
+Ordinal: 108
+Char has descender: False
+width, height = 1, 11
+width, height = 1, 14 (with 3 px ajusted_descender added)
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+
+--- m ----------------
+Ordinal: 109
+Char has descender: False
+width, height = 11, 8
+width, height = 11, 11 (with 3 px ajusted_descender added)
+* ***  *** 
+**   **   *
+*    *    *
+*    *    *
+*    *    *
+*    *    *
+*    *    *
+*    *    *
+
+--- n ----------------
+Ordinal: 110
+Char has descender: False
+width, height = 7, 8
+width, height = 7, 11 (with 3 px ajusted_descender added)
+* **** 
+**   **
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+
+--- o ----------------
+Ordinal: 111
+Char has descender: False
+width, height = 7, 8
+width, height = 7, 11 (with 3 px ajusted_descender added)
+  ***  
+ *   * 
+*     *
+*     *
+*     *
+*     *
+ *   * 
+  ***  
+
+--- p ----------------
+Ordinal: 112
+Char has descender: True
+width, height = 7, 11
+width, height = 7, 11 (with 3 px descender already included)
+* ***  
+**   * 
+*     *
+*     *
+*     *
+*     *
+**   * 
+* ***  
+*      
+*      
+*      
+
+--- q ----------------
+Ordinal: 113
+Char has descender: True
+width, height = 7, 11
+width, height = 7, 11 (with 3 px descender already included)
+  *** *
+ *   **
+*     *
+*     *
+*     *
+*     *
+ *   **
+  *** *
+      *
+      *
+      *
+
+--- r ----------------
+Ordinal: 114
+Char has descender: False
+width, height = 4, 8
+width, height = 4, 11 (with 3 px ajusted_descender added)
+* **
+**  
+*   
+*   
+*   
+*   
+*   
+*   
+
+--- s ----------------
+Ordinal: 115
+Char has descender: False
+width, height = 6, 8
+width, height = 6, 11 (with 3 px ajusted_descender added)
+ **** 
+*    *
+*     
+***   
+   ***
+     *
+*    *
+ **** 
+
+--- t ----------------
+Ordinal: 116
+Char has descender: False
+width, height = 5, 10
+width, height = 5, 13 (with 3 px ajusted_descender added)
+ *   
+ *   
+*****
+ *   
+ *   
+ *   
+ *   
+ *   
+ *   
+  ***
+
+--- u ----------------
+Ordinal: 117
+Char has descender: False
+width, height = 7, 8
+width, height = 7, 11 (with 3 px ajusted_descender added)
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+**   **
+ **** *
+
+--- v ----------------
+Ordinal: 118
+Char has descender: False
+width, height = 7, 8
+width, height = 7, 11 (with 3 px ajusted_descender added)
+*     *
+*     *
+ *   * 
+ *   * 
+ *   * 
+  * *  
+  * *  
+   *   
+
+--- w ----------------
+Ordinal: 119
+Char has descender: False
+width, height = 9, 8
+width, height = 9, 11 (with 3 px ajusted_descender added)
+*   *   *
+*   *   *
+*   *   *
+ * * * * 
+ * * * * 
+ * * * * 
+  *   *  
+  *   *  
+
+--- x ----------------
+Ordinal: 120
+Char has descender: False
+width, height = 7, 8
+width, height = 7, 11 (with 3 px ajusted_descender added)
+*     *
+ *   * 
+  * *  
+   *   
+   *   
+  * *  
+ *   * 
+*     *
+
+--- y ----------------
+Ordinal: 121
+Char has descender: True
+width, height = 7, 11
+width, height = 7, 11 (with 3 px descender already included)
+*     *
+*     *
+ *   * 
+ *   * 
+  * *  
+  * *  
+   *   
+   *   
+   *   
+  *    
+**     
+
+--- z ----------------
+Ordinal: 122
+Char has descender: False
+width, height = 6, 8
+width, height = 6, 11 (with 3 px ajusted_descender added)
+******
+     *
+    * 
+   *  
+  *   
+ *    
+*     
+******
+
+--- { ----------------
+Ordinal: 123
+Char has descender: False
+width, height = 5, 13
+width, height = 5, 15 (with 2 px ajusted_descender added)
+   **
+  *  
+  *  
+  *  
+  *  
+  *  
+**   
+  *  
+  *  
+  *  
+  *  
+  *  
+   **
+
+--- | ----------------
+Ordinal: 124
+Char has descender: False
+width, height = 1, 14
+width, height = 1, 15 (with 1 px ajusted_descender added)
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+
+--- } ----------------
+Ordinal: 125
+Char has descender: False
+width, height = 5, 13
+width, height = 5, 15 (with 2 px ajusted_descender added)
+**   
+  *  
+  *  
+  *  
+  *  
+  *  
+   **
+  *  
+  *  
+  *  
+  *  
+  *  
+**   
+
+--- ~ ----------------
+Ordinal: 126
+Char has descender: False
+width, height = 9, 2
+width, height = 9, 5 (with 3 px ajusted_descender added)
+ ****   *
+*   **** 
+
+---  ----------------
+Ordinal: 127
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 128
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 129
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 130
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 131
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 132
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 133
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 134
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 135
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 136
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 137
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 138
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 139
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 140
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 141
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 142
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 143
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 144
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 145
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 146
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 147
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 148
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 149
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 150
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 151
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 152
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 153
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 154
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 155
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 156
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 157
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 158
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---  ----------------
+Ordinal: 159
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+---   ----------------
+Ordinal: 160
+Char has descender: False
+width, height = 0, 0
+width, height = 0, 3 (with 3 px ajusted_descender added)
+
+--- ¡ ----------------
+Ordinal: 161
+Char has descender: False
+width, height = 1, 10
+width, height = 1, 13 (with 3 px ajusted_descender added)
+*
+*
+ 
+ 
+*
+*
+*
+*
+*
+*
+
+--- ¢ ----------------
+Ordinal: 162
+Char has descender: False
+width, height = 6, 12
+width, height = 6, 15 (with 3 px ajusted_descender added)
+   *  
+   *  
+  *** 
+ * * *
+*  *  
+*  *  
+*  *  
+*  *  
+ * * *
+  *** 
+   *  
+   *  
+
+--- £ ----------------
+Ordinal: 163
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+   *** 
+  *   *
+  *    
+  *    
+  *    
+ ***** 
+  *    
+  *    
+  *    
+*******
+
+--- ¤ ----------------
+Ordinal: 164
+Char has descender: False
+width, height = 8, 8
+width, height = 8, 11 (with 3 px ajusted_descender added)
+*      *
+ ****** 
+ **  ** 
+ *    * 
+ *    * 
+ **  ** 
+ ****** 
+*      *
+
+--- ¥ ----------------
+Ordinal: 165
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+*     *
+ *   * 
+ *   * 
+  * *  
+*** ***
+   *   
+*******
+   *   
+   *   
+   *   
+
+--- ¦ ----------------
+Ordinal: 166
+Char has descender: False
+width, height = 1, 12
+width, height = 1, 15 (with 3 px ajusted_descender added)
+*
+*
+*
+*
+*
+ 
+ 
+*
+*
+*
+*
+*
+
+--- § ----------------
+Ordinal: 167
+Char has descender: False
+width, height = 6, 11
+width, height = 6, 14 (with 3 px ajusted_descender added)
+ *****
+*     
+**    
+ ***  
+*   **
+*    *
+ **  *
+  *** 
+    **
+     *
+***** 
+
+--- ¨ ----------------
+Ordinal: 168
+Char has descender: False
+width, height = 3, 1
+width, height = 3, 4 (with 3 px ajusted_descender added)
+* *
+
+--- © ----------------
+Ordinal: 169
+Char has descender: False
+width, height = 10, 10
+width, height = 10, 13 (with 3 px ajusted_descender added)
+   ****   
+ **    ** 
+ * **** * 
+* **     *
+* *      *
+* *      *
+* **     *
+ * **** * 
+ **    ** 
+   ****   
+
+--- ª ----------------
+Ordinal: 170
+Char has descender: False
+width, height = 5, 8
+width, height = 5, 11 (with 3 px ajusted_descender added)
+ *** 
+    *
+ ****
+*   *
+*   *
+ ****
+     
+*****
+
+--- « ----------------
+Ordinal: 171
+Char has descender: False
+width, height = 6, 6
+width, height = 6, 9 (with 3 px ajusted_descender added)
+  *  *
+ ** **
+** ** 
+** ** 
+ ** **
+  *  *
+
+--- ¬ ----------------
+Ordinal: 172
+Char has descender: False
+width, height = 9, 4
+width, height = 9, 7 (with 3 px ajusted_descender added)
+*********
+        *
+        *
+        *
+
+--- ­ ----------------
+Ordinal: 173
+Char has descender: False
+width, height = 4, 1
+width, height = 4, 4 (with 3 px ajusted_descender added)
+****
+
+--- ® ----------------
+Ordinal: 174
+Char has descender: False
+width, height = 10, 10
+width, height = 10, 13 (with 3 px ajusted_descender added)
+   ****   
+ **    ** 
+ * **** * 
+*  *  *  *
+*  ***   *
+*  * *   *
+*  *  *  *
+ * *  *** 
+ **    ** 
+   ****   
+
+--- ¯ ----------------
+Ordinal: 175
+Char has descender: False
+width, height = 4, 1
+width, height = 4, 4 (with 3 px ajusted_descender added)
+****
+
+--- ° ----------------
+Ordinal: 176
+Char has descender: False
+width, height = 4, 4
+width, height = 4, 7 (with 3 px ajusted_descender added)
+ ** 
+*  *
+*  *
+ ** 
+
+--- ± ----------------
+Ordinal: 177
+Char has descender: False
+width, height = 9, 9
+width, height = 9, 12 (with 3 px ajusted_descender added)
+    *    
+    *    
+    *    
+*********
+    *    
+    *    
+    *    
+         
+*********
+
+--- ² ----------------
+Ordinal: 178
+Char has descender: False
+width, height = 4, 6
+width, height = 4, 9 (with 3 px ajusted_descender added)
+*** 
+   *
+   *
+  * 
+ *  
+****
+
+--- ³ ----------------
+Ordinal: 179
+Char has descender: False
+width, height = 4, 6
+width, height = 4, 9 (with 3 px ajusted_descender added)
+****
+   *
+ ** 
+   *
+   *
+*** 
+
+--- ´ ----------------
+Ordinal: 180
+Char has descender: False
+width, height = 3, 3
+width, height = 3, 6 (with 3 px ajusted_descender added)
+ **
+ * 
+*  
+
+--- µ ----------------
+Ordinal: 181
+Char has descender: False
+width, height = 8, 11
+width, height = 8, 14 (with 3 px ajusted_descender added)
+*     * 
+*     * 
+*     * 
+*     * 
+*     * 
+*     * 
+**   ** 
+***** **
+*       
+*       
+*       
+
+--- ¶ ----------------
+Ordinal: 182
+Char has descender: False
+width, height = 6, 11
+width, height = 6, 14 (with 3 px ajusted_descender added)
+ *****
+**** *
+**** *
+**** *
+ *** *
+  ** *
+   * *
+   * *
+   * *
+   * *
+   * *
+
+--- · ----------------
+Ordinal: 183
+Char has descender: False
+width, height = 1, 2
+width, height = 1, 5 (with 3 px ajusted_descender added)
+*
+*
+
+--- ¸ ----------------
+Ordinal: 184
+Char has descender: False
+width, height = 3, 3
+width, height = 3, 6 (with 3 px ajusted_descender added)
+ * 
+  *
+***
+
+--- ¹ ----------------
+Ordinal: 185
+Char has descender: False
+width, height = 3, 6
+width, height = 3, 9 (with 3 px ajusted_descender added)
+** 
+ * 
+ * 
+ * 
+ * 
+***
+
+--- º ----------------
+Ordinal: 186
+Char has descender: False
+width, height = 5, 8
+width, height = 5, 11 (with 3 px ajusted_descender added)
+ *** 
+*   *
+*   *
+*   *
+*   *
+ *** 
+     
+*****
+
+--- » ----------------
+Ordinal: 187
+Char has descender: False
+width, height = 6, 6
+width, height = 6, 9 (with 3 px ajusted_descender added)
+*  *  
+** ** 
+ ** **
+ ** **
+** ** 
+*  *  
+
+--- ¼ ----------------
+Ordinal: 188
+Char has descender: False
+width, height = 12, 10
+width, height = 12, 13 (with 3 px ajusted_descender added)
+**      *   
+ *     *    
+ *    **    
+ *    *     
+ *   *    * 
+***  *   ** 
+    *   * * 
+   **  *  * 
+   *   *****
+  *       * 
+
+--- ½ ----------------
+Ordinal: 189
+Char has descender: False
+width, height = 12, 11
+width, height = 12, 14 (with 3 px ajusted_descender added)
+**      *   
+ *     *    
+ *    **    
+ *    *     
+ *   *      
+***  *  *** 
+    *      *
+   **      *
+   *      * 
+  *      *  
+        ****
+
+--- ¾ ----------------
+Ordinal: 190
+Char has descender: False
+width, height = 12, 10
+width, height = 12, 13 (with 3 px ajusted_descender added)
+****    *   
+   *   *    
+ **   **    
+   *  *     
+   * *    * 
+***  *   ** 
+    *   * * 
+   **  *  * 
+   *   *****
+  *       * 
+
+--- ¿ ----------------
+Ordinal: 191
+Char has descender: False
+width, height = 5, 10
+width, height = 5, 13 (with 3 px ajusted_descender added)
+  *  
+  *  
+     
+  *  
+  *  
+ **  
+**   
+*    
+*   *
+ *** 
+
+--- À ----------------
+Ordinal: 192
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+   *     
+    *    
+         
+    *    
+   * *   
+   * *   
+  *   *  
+  *   *  
+  *   *  
+ ******* 
+ *     * 
+ *     * 
+*       *
+
+--- Á ----------------
+Ordinal: 193
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+     *   
+    *    
+         
+    *    
+   * *   
+   * *   
+  *   *  
+  *   *  
+  *   *  
+ ******* 
+ *     * 
+ *     * 
+*       *
+
+--- Â ----------------
+Ordinal: 194
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+    **   
+   *  *  
+         
+    *    
+   * *   
+   * *   
+  *   *  
+  *   *  
+  *   *  
+ ******* 
+ *     * 
+ *     * 
+*       *
+
+--- Ã ----------------
+Ordinal: 195
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+  *** *  
+  * ***  
+         
+    *    
+   * *   
+   * *   
+  *   *  
+  *   *  
+  *   *  
+ ******* 
+ *     * 
+ *     * 
+*       *
+
+--- Ä ----------------
+Ordinal: 196
+Char has descender: False
+width, height = 9, 12
+width, height = 9, 15 (with 3 px ajusted_descender added)
+   * *   
+         
+    *    
+   * *   
+   * *   
+  *   *  
+  *   *  
+  *   *  
+ ******* 
+ *     * 
+ *     * 
+*       *
+
+--- Å ----------------
+Ordinal: 197
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+   ***   
+   * *   
+   * *   
+    *    
+    *    
+   * *   
+   * *   
+  *   *  
+  *   *  
+ ******* 
+ *     * 
+ *     * 
+*       *
+
+--- Æ ----------------
+Ordinal: 198
+Char has descender: False
+width, height = 13, 10
+width, height = 13, 13 (with 3 px ajusted_descender added)
+    *********
+    * *      
+   *  *      
+   *  *      
+  *   *******
+  *   *      
+ ******      
+ *    *      
+ *    *      
+*     *******
+
+--- Ç ----------------
+Ordinal: 199
+Char has descender: False
+width, height = 8, 13
+width, height = 8, 15 (with 2 px ajusted_descender added)
+  ***** 
+ **    *
+**      
+*       
+*       
+*       
+*       
+**      
+ **    *
+  ***** 
+    *   
+     *  
+   ***  
+
+--- È ----------------
+Ordinal: 200
+Char has descender: False
+width, height = 7, 13
+width, height = 7, 15 (with 2 px ajusted_descender added)
+  *    
+   *   
+       
+*******
+*      
+*      
+*      
+*******
+*      
+*      
+*      
+*      
+*******
+
+--- É ----------------
+Ordinal: 201
+Char has descender: False
+width, height = 7, 13
+width, height = 7, 15 (with 2 px ajusted_descender added)
+    *  
+   *   
+       
+*******
+*      
+*      
+*      
+*******
+*      
+*      
+*      
+*      
+*******
+
+--- Ê ----------------
+Ordinal: 202
+Char has descender: False
+width, height = 7, 13
+width, height = 7, 15 (with 2 px ajusted_descender added)
+   **  
+  *  * 
+       
+*******
+*      
+*      
+*      
+*******
+*      
+*      
+*      
+*      
+*******
+
+--- Ë ----------------
+Ordinal: 203
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+  * *  
+       
+*******
+*      
+*      
+*      
+*******
+*      
+*      
+*      
+*      
+*******
+
+--- Ì ----------------
+Ordinal: 204
+Char has descender: False
+width, height = 2, 13
+width, height = 2, 15 (with 2 px ajusted_descender added)
+* 
+ *
+  
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+--- Í ----------------
+Ordinal: 205
+Char has descender: False
+width, height = 4, 13
+width, height = 4, 15 (with 2 px ajusted_descender added)
+  * 
+ *  
+    
+*   
+*   
+*   
+*   
+*   
+*   
+*   
+*   
+*   
+*   
+
+--- Î ----------------
+Ordinal: 206
+Char has descender: False
+width, height = 4, 13
+width, height = 4, 15 (with 2 px ajusted_descender added)
+ ** 
+*  *
+    
+*   
+*   
+*   
+*   
+*   
+*   
+*   
+*   
+*   
+*   
+
+--- Ï ----------------
+Ordinal: 207
+Char has descender: False
+width, height = 3, 12
+width, height = 3, 15 (with 3 px ajusted_descender added)
+* *
+   
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+
+--- Ð ----------------
+Ordinal: 208
+Char has descender: False
+width, height = 10, 10
+width, height = 10, 13 (with 3 px ajusted_descender added)
+ ******   
+ *     ** 
+ *      * 
+ *       *
+****     *
+ *       *
+ *       *
+ *      * 
+ *     ** 
+ ******   
+
+--- Ñ ----------------
+Ordinal: 209
+Char has descender: False
+width, height = 8, 13
+width, height = 8, 15 (with 2 px ajusted_descender added)
+  *** * 
+  * *** 
+        
+**     *
+**     *
+* *    *
+*  *   *
+*  *   *
+*   *  *
+*   *  *
+*    * *
+*     **
+*     **
+
+--- Ò ----------------
+Ordinal: 210
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+   *     
+    *    
+         
+  *****  
+ **   ** 
+**     **
+*       *
+*       *
+*       *
+*       *
+**     **
+ **   ** 
+  *****  
+
+--- Ó ----------------
+Ordinal: 211
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+     *   
+    *    
+         
+  *****  
+ **   ** 
+**     **
+*       *
+*       *
+*       *
+*       *
+**     **
+ **   ** 
+  *****  
+
+--- Ô ----------------
+Ordinal: 212
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+    **   
+   *  *  
+         
+  *****  
+ **   ** 
+**     **
+*       *
+*       *
+*       *
+*       *
+**     **
+ **   ** 
+  *****  
+
+--- Õ ----------------
+Ordinal: 213
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+  *** *  
+  * ***  
+         
+  *****  
+ **   ** 
+**     **
+*       *
+*       *
+*       *
+*       *
+**     **
+ **   ** 
+  *****  
+
+--- Ö ----------------
+Ordinal: 214
+Char has descender: False
+width, height = 9, 12
+width, height = 9, 15 (with 3 px ajusted_descender added)
+   * *   
+         
+  *****  
+ **   ** 
+**     **
+*       *
+*       *
+*       *
+*       *
+**     **
+ **   ** 
+  *****  
+
+--- × ----------------
+Ordinal: 215
+Char has descender: False
+width, height = 8, 8
+width, height = 8, 11 (with 3 px ajusted_descender added)
+*      *
+ *    * 
+  *  *  
+   **   
+   **   
+  *  *  
+ *    * 
+*      *
+
+--- Ø ----------------
+Ordinal: 216
+Char has descender: False
+width, height = 9, 10
+width, height = 9, 13 (with 3 px ajusted_descender added)
+  ***** *
+ **   ** 
+**    ** 
+*    *  *
+*   *   *
+*   *   *
+*  *    *
+ **    * 
+ **   ** 
+* *****  
+
+--- Ù ----------------
+Ordinal: 217
+Char has descender: False
+width, height = 8, 13
+width, height = 8, 15 (with 2 px ajusted_descender added)
+   *    
+    *   
+        
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+ *    * 
+  ****  
+
+--- Ú ----------------
+Ordinal: 218
+Char has descender: False
+width, height = 8, 13
+width, height = 8, 15 (with 2 px ajusted_descender added)
+     *  
+    *   
+        
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+ *    * 
+  ****  
+
+--- Û ----------------
+Ordinal: 219
+Char has descender: False
+width, height = 8, 13
+width, height = 8, 15 (with 2 px ajusted_descender added)
+    **  
+   *  * 
+        
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+ *    * 
+  ****  
+
+--- Ü ----------------
+Ordinal: 220
+Char has descender: False
+width, height = 8, 12
+width, height = 8, 15 (with 3 px ajusted_descender added)
+   * *  
+        
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+ *    * 
+  ****  
+
+--- Ý ----------------
+Ordinal: 221
+Char has descender: False
+width, height = 9, 13
+width, height = 9, 15 (with 2 px ajusted_descender added)
+     *   
+    *    
+         
+**     **
+ *     * 
+  *   *  
+  *   *  
+   * *   
+    *    
+    *    
+    *    
+    *    
+    *    
+
+--- Þ ----------------
+Ordinal: 222
+Char has descender: False
+width, height = 7, 10
+width, height = 7, 13 (with 3 px ajusted_descender added)
+*      
+****** 
+*    **
+*     *
+*     *
+*    **
+****** 
+*      
+*      
+*      
+
+--- ß ----------------
+Ordinal: 223
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+ ****  
+**   * 
+*    * 
+*  **  
+*  *   
+*  *   
+*  *** 
+*    **
+*     *
+*     *
+* **** 
+
+--- à ----------------
+Ordinal: 224
+Char has descender: False
+width, height = 6, 12
+width, height = 6, 15 (with 3 px ajusted_descender added)
+ **   
+  *   
+   *  
+      
+ **** 
+*    *
+     *
+ *****
+*    *
+*    *
+*   **
+ *** *
+
+--- á ----------------
+Ordinal: 225
+Char has descender: False
+width, height = 6, 12
+width, height = 6, 15 (with 3 px ajusted_descender added)
+    **
+    * 
+   *  
+      
+ **** 
+*    *
+     *
+ *****
+*    *
+*    *
+*   **
+ *** *
+
+--- â ----------------
+Ordinal: 226
+Char has descender: False
+width, height = 6, 12
+width, height = 6, 15 (with 3 px ajusted_descender added)
+  **  
+  **  
+ *  * 
+      
+ **** 
+*    *
+     *
+ *****
+*    *
+*    *
+*   **
+ *** *
+
+--- ã ----------------
+Ordinal: 227
+Char has descender: False
+width, height = 6, 11
+width, height = 6, 14 (with 3 px ajusted_descender added)
+ *** *
+ * ***
+      
+ **** 
+*    *
+     *
+ *****
+*    *
+*    *
+*   **
+ *** *
+
+--- ä ----------------
+Ordinal: 228
+Char has descender: False
+width, height = 6, 11
+width, height = 6, 14 (with 3 px ajusted_descender added)
+  * * 
+      
+      
+ **** 
+*    *
+     *
+ *****
+*    *
+*    *
+*   **
+ *** *
+
+--- å ----------------
+Ordinal: 229
+Char has descender: False
+width, height = 6, 13
+width, height = 6, 15 (with 2 px ajusted_descender added)
+   ** 
+  *  *
+  *  *
+   ** 
+      
+ **** 
+*    *
+     *
+ *****
+*    *
+*    *
+*   **
+ *** *
+
+--- æ ----------------
+Ordinal: 230
+Char has descender: False
+width, height = 12, 8
+width, height = 12, 11 (with 3 px ajusted_descender added)
+ **** ***** 
+*    **   * 
+     *     *
+ ***********
+*    *      
+*    *      
+*   * *    *
+ ***   **** 
+
+--- ç ----------------
+Ordinal: 231
+Char has descender: False
+width, height = 6, 11
+width, height = 6, 14 (with 3 px ajusted_descender added)
+  *** 
+ *   *
+*     
+*     
+*     
+*     
+ *   *
+  *** 
+   *  
+    * 
+  *** 
+
+--- è ----------------
+Ordinal: 232
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+ **    
+  *    
+   *   
+       
+  **** 
+ *   **
+*     *
+*******
+*      
+*      
+ *    *
+  **** 
+
+--- é ----------------
+Ordinal: 233
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+    ** 
+    *  
+   *   
+       
+  **** 
+ *   **
+*     *
+*******
+*      
+*      
+ *    *
+  **** 
+
+--- ê ----------------
+Ordinal: 234
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+  **   
+  **   
+ *  *  
+       
+  **** 
+ *   **
+*     *
+*******
+*      
+*      
+ *    *
+  **** 
+
+--- ë ----------------
+Ordinal: 235
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+  * *  
+       
+       
+  **** 
+ *   **
+*     *
+*******
+*      
+*      
+ *    *
+  **** 
+
+--- ì ----------------
+Ordinal: 236
+Char has descender: False
+width, height = 3, 12
+width, height = 3, 15 (with 3 px ajusted_descender added)
+** 
+ * 
+  *
+   
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+
+--- í ----------------
+Ordinal: 237
+Char has descender: False
+width, height = 3, 12
+width, height = 3, 15 (with 3 px ajusted_descender added)
+ **
+ * 
+*  
+   
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+
+--- î ----------------
+Ordinal: 238
+Char has descender: False
+width, height = 4, 12
+width, height = 4, 15 (with 3 px ajusted_descender added)
+ ** 
+ ** 
+*  *
+    
+  * 
+  * 
+  * 
+  * 
+  * 
+  * 
+  * 
+  * 
+
+--- ï ----------------
+Ordinal: 239
+Char has descender: False
+width, height = 3, 11
+width, height = 3, 14 (with 3 px ajusted_descender added)
+* *
+   
+   
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+
+--- ð ----------------
+Ordinal: 240
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+  * ** 
+ ***   
+    *  
+  **** 
+ *   **
+*     *
+*     *
+*     *
+*     *
+ *   * 
+  ***  
+
+--- ñ ----------------
+Ordinal: 241
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+ *** * 
+ * *** 
+       
+* **** 
+**   **
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+
+--- ò ----------------
+Ordinal: 242
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+ **    
+  *    
+   *   
+       
+  ***  
+ *   * 
+*     *
+*     *
+*     *
+*     *
+ *   * 
+  ***  
+
+--- ó ----------------
+Ordinal: 243
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+    ** 
+    *  
+   *   
+       
+  ***  
+ *   * 
+*     *
+*     *
+*     *
+*     *
+ *   * 
+  ***  
+
+--- ô ----------------
+Ordinal: 244
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+  **   
+  **   
+ *  *  
+       
+  ***  
+ *   * 
+*     *
+*     *
+*     *
+*     *
+ *   * 
+  ***  
+
+--- õ ----------------
+Ordinal: 245
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+ *** * 
+ * *** 
+       
+  ***  
+ *   * 
+*     *
+*     *
+*     *
+*     *
+ *   * 
+  ***  
+
+--- ö ----------------
+Ordinal: 246
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+  * *  
+       
+       
+  ***  
+ *   * 
+*     *
+*     *
+*     *
+*     *
+ *   * 
+  ***  
+
+--- ÷ ----------------
+Ordinal: 247
+Char has descender: False
+width, height = 10, 7
+width, height = 10, 10 (with 3 px ajusted_descender added)
+    **    
+    **    
+          
+**********
+          
+    **    
+    **    
+
+--- ø ----------------
+Ordinal: 248
+Char has descender: False
+width, height = 7, 8
+width, height = 7, 11 (with 3 px ajusted_descender added)
+  *** *
+ *   * 
+*   * *
+*  *  *
+*  *  *
+* *   *
+ *   * 
+* ***  
+
+--- ù ----------------
+Ordinal: 249
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+ **    
+  *    
+   *   
+       
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+**   **
+ **** *
+
+--- ú ----------------
+Ordinal: 250
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+    ** 
+    *  
+   *   
+       
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+**   **
+ **** *
+
+--- û ----------------
+Ordinal: 251
+Char has descender: False
+width, height = 7, 12
+width, height = 7, 15 (with 3 px ajusted_descender added)
+  **   
+  **   
+ *  *  
+       
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+**   **
+ **** *
+
+--- ü ----------------
+Ordinal: 252
+Char has descender: False
+width, height = 7, 11
+width, height = 7, 14 (with 3 px ajusted_descender added)
+  * *  
+       
+       
+*     *
+*     *
+*     *
+*     *
+*     *
+*     *
+**   **
+ **** *
+
+--- ý ----------------
+Ordinal: 253
+Char has descender: False
+width, height = 7, 15
+width, height = 7, 15 (with 0 px ajusted_descender added)
+     **
+     * 
+    *  
+       
+*     *
+*     *
+ *   * 
+ *   * 
+  * *  
+  * *  
+   *   
+   *   
+   *   
+  *    
+**     
+
+--- þ ----------------
+Ordinal: 254
+Char has descender: False
+width, height = 7, 14
+width, height = 7, 15 (with 1 px ajusted_descender added)
+*      
+*      
+*      
+* ***  
+**   * 
+*     *
+*     *
+*     *
+*     *
+**   * 
+* ***  
+*      
+*      
+*      
+
+--- ÿ ----------------
+Ordinal: 255
+Char has descender: False
+width, height = 7, 14
+width, height = 7, 15 (with 1 px ajusted_descender added)
+   * * 
+       
+       
+*     *
+*     *
+ *   * 
+ *   * 
+  * *  
+  * *  
+   *   
+   *   
+   *   
+  *    
+**     
+
