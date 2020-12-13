@@ -76,6 +76,26 @@ __arrow_23__
 
 ![font](micropython/docs/_static/arrow_23.jpg)
 
+__dejav_m8__
+
+![font](micropython/docs/_static/dejav_m8.jpg)
+
+__dejav_m10__
+
+![font](micropython/docs/_static/dejav_m10.jpg)
+
+__dejav_m12__
+
+![font](micropython/docs/_static/dejav_m12.jpg)
+
+__dejav_m15__
+
+![font](micropython/docs/_static/dejav_m15.jpg)
+
+__dejav_m20__
+
+![font](micropython/docs/_static/dejav_m20.jpg)
+
 __etypo_13__
 
 ![font](micropython/docs/_static/etypo_13.jpg)
@@ -83,6 +103,22 @@ __etypo_13__
 __etypo_23__
 
 ![font](micropython/docs/_static/etypo_23.jpg)
+
+__fserif_m10__
+
+![font](micropython/docs/_static/fserif_m10.jpg)
+
+__fserif_m12__
+
+![font](micropython/docs/_static/fserif_m12.jpg)
+
+__fserif_m15__
+
+![font](micropython/docs/_static/fserif_m15.jpg)
+
+__fserif_m20__
+
+![font](micropython/docs/_static/fserif_m20.jpg)
 
 __heyd_23__
 
@@ -95,6 +131,26 @@ __pitch_15__
 __pitch_23__
 
 ![font](micropython/docs/_static/pitch_23.jpg)
+
+__robotl_m8__
+
+![font](micropython/docs/_static/robotl_m8.jpg)
+
+__robotl_m10__
+
+![font](micropython/docs/_static/robotl_m10.jpg)
+
+__robotl_m12__
+
+![font](micropython/docs/_static/robotl_m12.jpg)
+
+__robotl_m15__
+
+![font](micropython/docs/_static/robotl_m15.jpg)
+
+__robotl_m20__
+
+![font](micropython/docs/_static/robotl_m20.jpg)
 
 __vera_10__
 

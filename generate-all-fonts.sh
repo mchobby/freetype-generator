@@ -38,6 +38,25 @@ python3 ft-generate.py ttf-fonts/VeraMono.ttf 10 upy-fonts/veram_m10.py VeraMono
 python3 ft-generate.py ttf-fonts/VeraMono.ttf 15 upy-fonts/veram_m15.py VeraMono_m15 --chars=$MINIMAL_CHARSET
 python3 ft-generate.py ttf-fonts/VeraMono.ttf 23 upy-fonts/veram_m23.py VeraMono_m23 --chars=$MINIMAL_CHARSET
 
+python3 ft-generate.py ttf-fonts/Roboto-Light.ttf 8 upy-fonts/robotl_m8.py RobotoLight_m8 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/Roboto-Light.ttf 10 upy-fonts/robotl_m10.py RobotoLight_m10 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/Roboto-Light.ttf 12 upy-fonts/robotl_m12.py RobotoLight_m12 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/Roboto-Light.ttf 15 upy-fonts/robotl_m15.py RobotoLight_m15 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/Roboto-Light.ttf 20 upy-fonts/robotl_m20.py RobotoLight_m20 --chars=$MINIMAL_CHARSET
+# FontDrawer not stable for height 23
+# python3 ft-generate.py ttf-fonts/Roboto-Light.ttf 23 upy-fonts/robotl_23.py RobotoLight_23 --chars=$MINIMAL_CHARSET
+
+python3 ft-generate.py ttf-fonts/DejaVuSansMono.ttf 8 upy-fonts/dejav_m8.py dejav_m8 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/DejaVuSansMono.ttf 10 upy-fonts/dejav_m10.py dejav_m10 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/DejaVuSansMono.ttf 12 upy-fonts/dejav_m12.py dejav_m12 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/DejaVuSansMono.ttf 15 upy-fonts/dejav_m15.py dejav_m15 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/DejaVuSansMono.ttf 20 upy-fonts/dejav_m20.py dejav_m20 --chars=$MINIMAL_CHARSET
+
+python3 ft-generate.py ttf-fonts/FreeSerif-4aeK.ttf 10 upy-fonts/fserif_m10.py fserif_m10 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/FreeSerif-4aeK.ttf 12 upy-fonts/fserif_m12.py fserif_m12 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/FreeSerif-4aeK.ttf 15 upy-fonts/fserif_m15.py fserif_m15 --chars=$MINIMAL_CHARSET
+python3 ft-generate.py ttf-fonts/FreeSerif-4aeK.ttf 20 upy-fonts/fserif_m20.py fserif_m20 --chars=$MINIMAL_CHARSET
+
 python3 ft-generate.py ttf-fonts/PitchDisplayRegularDemo.ttf 14 upy-fonts/pitch_15.py Pitch_15 --chars=$FULL_CHARSET
 python3 ft-generate.py ttf-fonts/PitchDisplayRegularDemo.ttf 22 upy-fonts/pitch_23.py Pitch_23 --chars=$FULL_CHARSET
 
