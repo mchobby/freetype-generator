@@ -23,7 +23,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 import os
 
@@ -49,6 +49,7 @@ class FontLoader:
 		self.entries  = f.read(1)[0]
 		self.data = f.read() # read the remain of the file
 		self.mv = memoryview(self.data)
+		self.descender = self.get_descender() # Additional height for descender
 
 	def get_width( self, word ):
 		return len(word)*self.width
@@ -65,6 +66,25 @@ class FontLoader:
 				cursor += 1
 			r.append( _d )
 		return r
+
+	def get_descender( self ):
+		""" Explore the font for additional height needed to draw descenders """
+		_max_height = 0
+		_cursor = 0
+		_ch  = self.mv[_cursor] #self.data[_cursor]
+		_size = self.mv[_cursor+1] #self.data[_cursor+1]
+		while _ch != None:
+			__d = self._extract_char_data( _cursor, _size )
+			for __val in __d:
+				_max_height = max( _max_height, len(bin(__val))-3 )
+			# New cursor Index
+			_cursor += 2 + (_size*self.datasize)
+			if _cursor >= len(self.data):
+				_ch = None
+			else:
+				_ch = self.mv[_cursor] #self.data[_cursor]
+				_size = self.mv[_cursor+1] #self.data[_cursor+1]
+		return max(0,_max_height-self.height)
 
 	def __getitem__( self, char_code ):
 		""" Retreive the data for a given ascii caracter.
