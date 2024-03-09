@@ -1,57 +1,53 @@
 #!/usr/bin/env python3
-# coding: utf8                
+# coding: utf8
 
-help = """FreeType View - get a FreeType font file and display it's bitmap representation (for all characters or a single char).
-This script is useful to get font sizing (in pixels) and its representation (under bitmap format).  
- 
+"""
+FreeType View - display the bitmap representation of a FreeType font file.
+
+This script is useful for obtaining font sizing (in pixels) and its bitmap representation.
+
 Usage:
-  ft-view.py <ttf_file> <ttf_size> [--char=<char>] [--descenders=<comma-separated-list>] [--special-align=<comma-separated-list>]
- 
+  ft-view.py <ttf_file> <ttf_size> [--char=<char>] [--descenders=<descenders>] [--special-align=<special_align>]
+  ft-view.py -h | --help
+
 Options:
-  -h --help          This helps screen
-
-Examples:
-  python3 ft-view.py ttf-fonts/Vera.ttf 13           --> Will displays all the characters
-  python3 ft-view.py ttf-fonts/Vera.ttf 13 --char=A  --> Display only the char "A"
-  python3 ft-view.py tft-fonts/heydings_icons.ttf 23 --char=A --descenders=   --> ignore all descenders
-  python3  ft-view.py ttf-fonts/Vera.ttf 13 --descenders=p,q,j,#34 --> change the descenders
-  python3  ft-view.py ttf-fonts/Vera.ttf 13 --descenders=          --> No descenders so baseline = bottomline! 
-  python3  ft-view.py ttf-fonts/Vera.ttf 13 --special-align=a:T,=:B,#126:M --> change the special alignment instruction. a on TOP, = on Bottom, ~(#126) in middle (between the baseline and top)
-  python3  ft-view.py ttf-fonts/Vera.ttf 13 --special-align=       --> delete special alignments. All chars on Bottom line (ideal for Wingdings chars).
-
-Happy Electronic Hacking. 
-MCHobby.be
-""" 
+  -h --help                     Show this help message and exit
+  --char=<char>                 Display only the specified character
+  --descenders=<descenders>     Define custom descenders (comma-separated list)
+  --special-align=<special_align> Define special alignment instructions (comma-separated list)
+"""
 
 # FreeType generator common items
 from ftcommon import *
 from docopt import docopt
-import sys
+
+def main():
+    # Parse command line arguments
+    arguments = docopt(__doc__)
+
+    char_filter = arguments['--char']  # e.g., 'B' or None
+
+    # Load font and set size
+    print("Load font %s, set size to %i" % (arguments['<ttf_file>'], int(arguments['<ttf_size>'])))
+    font_loader = FreeTypeLoader(font_file=arguments['<ttf_file>'], font_size=int(arguments['<ttf_size>']))
+    
+    # Set custom descenders
+    if arguments['--descenders'] is not None:
+        font_loader.set_descenders(arguments['--descenders'].split(','))
+
+    # Set special alignments
+    if arguments['--special-align'] is not None:
+        font_loader.set_special_align(arguments['--special-align'].split(','))
+
+    print("Max size (width,height): %i,%i" % (font_loader.max_width, font_loader.max_height))
+    print('Descender size = %i' % font_loader.descender_size)
+
+    # Print the bitmap representation of each character
+    for ordinal in font_loader.char_ordinals:
+        if char_filter is not None and ord(char_filter) != ordinal:
+            continue
+        font_loader.print_character(ordinal)
 
 if __name__ == '__main__':
-    arguments = docopt( help )
-
-    char_filter = arguments['--char'] # eg: 'B' or None
-    
-    print( "Load font %s, set size to %i" % (arguments['<ttf_file>'], int(arguments['<ttf_size>'])) )             
-    font_loader = FreeTypeLoader( font_file=arguments['<ttf_file>'], font_size=int(arguments['<ttf_size>']) )
-    if arguments['--descenders'] != None: # redefine the default descenders
-       font_loader.set_descenders( arguments['--descenders'] ) 
-    if arguments['--special-align' ] != None: # redefine the default special alignments
-       font_loader.set_special_align( arguments['--special-align' ] )  
-
-    print( "max size (width,height): %i,%i" %(font_loader.max_width, font_loader.max_height ) )
-    print( 'descender size = %i' % font_loader.descender_size )
-
-
-    #  for ordinal in font_loader.characters.keys():
-    for ordinal in font_loader.char_ordinals:
-        if (char_filter != None) and (ord(char_filter) != ordinal ):
-            continue
-
-        # print the bitmap representation of a character
-        #   include separator & dimension 
-        font_loader.print_character( ordinal )
-
-
+    main()
 
